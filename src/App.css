@@ -1,0 +1,26 @@
+/* Establece el tema oscuro */
+body.dark {
+    --ion-background-color: #121212;
+    --ion-text-color: #e0e0e0;
+    --ion-item-background: #333;
+    --ion-toolbar-background: #222;
+    --ion-button-background: #6200ea;
+    --ion-button-text-color: #fff;
+    --ion-input-background: #444;
+    --ion-input-placeholder-color: #aaa;
+    /* Otros estilos personalizados para el modo oscuro */
+  }
+  
+  /* Establece el tema claro */
+  body {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+    --ion-item-background: #fff;
+    --ion-toolbar-background: #f8f8f8;
+    --ion-button-background: #3880ff;
+    --ion-button-text-color: #fff;
+    --ion-input-background: #fff;
+    --ion-input-placeholder-color: #777;
+    /* Otros estilos personalizados para el modo claro */
+  }
+  

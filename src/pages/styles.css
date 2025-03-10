@@ -1,0 +1,224 @@
+/* Contenedor general del logo y título */
+.logo-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px; 
+  }
+  
+  /* Contenedor del logo */
+  .logo-container {
+    width: 120px; 
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+  }
+  
+  /* Imagen del logo */
+  .logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Evita deformaciones */
+  }
+  
+  /* Título */
+  .title {
+    text-align: center;
+  }
+  
+  .title h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .title p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Contenedor del formulario con padding */
+  .form-container {
+    width: 100%;
+    padding: 0 24px; 
+    box-sizing: border-box; 
+  }
+  
+  .input-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+    display: block;
+    text-align: left;
+    transition: color 0.3s ease; 
+  }
+  
+  /* Inputs */
+  .custom-input {
+    --background: #fff;
+    --border-radius: 8px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 8px;
+  }
+
+/* Estilo del contenedor cuando está enfocado */
+.custom-input.focused {
+    border: 1px solid #007bff;
+    background-color: #e6f0ff;
+  }
+  
+  /* Estilo del ícono SVG cuando el input está enfocado */
+  .eye-icon img.focused-svg {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(79%) saturate(2217%) hue-rotate(190deg) brightness(106%) contrast(100%);
+  }
+  
+  /* Alternativa para cambiar el color mediante el filtro para los SVG */
+  .eye-icon img {
+    transition: filter 0.3s ease;
+  }  
+
+  /* Ícono de contraseña */
+  .custom-input ion-icon {
+    cursor: pointer;
+    color: #555;
+  }
+  
+  /* Olvidó su contraseña */
+  .forgot-password {
+    color: #8C8C8C;
+    margin-top: 20px; 
+      font-size: 14px;
+      cursor: pointer;
+      text-align: right;
+  }
+  
+  .forgot-password:hover {
+    color: #0056b3;
+  }
+  
+  /* Botón de Google */
+  .google-button {
+    margin-top: 10px;
+    --color: #555;
+    --border-color: #ccc;
+  }
+  
+/* Estilo para el texto de registro */
+.register-text {
+    font-family: roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 117px;
+    text-align: center;
+  }
+  
+  .register-text .register-link {
+    color: #007bff;
+    text-decoration: none; 
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+  }
+  
+  .register-text .register-link:hover {
+    color: #0056b3; 
+    text-decoration: underline; 
+  }  
+  
+  .register-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 480px) {
+    .login-wrapper {
+      width: 95%;
+    }
+    
+    .title h2 {
+      font-size: 18px;
+    }
+    
+    .input-label {
+      font-size: 14px;
+      font-weight: bold; 
+      color: #333;
+      margin: 10px 0 5px;
+      display: block;
+      text-align: left; 
+    }
+  
+    .custom-input {
+      --padding-start: 10px;
+      --padding-end: 10px;
+    }
+  
+    .forgot-password {
+      margin-top: 20px; 
+        font-size: 14px; 
+        cursor: pointer;
+        text-align: right;
+    }
+    
+    .forgot-password:hover {
+      color: #0056b3; 
+    }
+    
+  
+    .register-text {
+      font-size: 11px;
+    }
+  }
+  /*Icono de home*/
+  .icon-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Home-Icon {
+    width: 24px;
+    height: 24px;
+  }
+  .icon-home-Tab1 {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+  /*Perfil*/
+  .icon-perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Perfil-Icon {
+    width: 24px;
+    height: 24px;
+  }
+  .icon-perfil-Tab4 {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+  /*Inventario*/
+  .icon-inventory-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Notificaciones*/
+.icon-notification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-notification-Tab3 {
+  margin-top: 4px;
+  font-size: 12px;
+}
