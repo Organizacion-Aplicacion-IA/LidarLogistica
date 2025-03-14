@@ -3,7 +3,7 @@ import {useHistory} from "react-router-dom";
 import LogoTitle from "../../components/LogoTitle";
 import EmailInputField from "../../components/EmailInputField"; 
 import PasswordInputField from "../../components/PasswordInputField"; 
-import Button from "../../components/Button"; 
+import Button from "../../components/Button/Button"; 
 import GoogleButton from "../../components/GoogleButton"; 
 import ForgotPasswordLink from "../../components/ForgotPasswordLink"; 
 import RegisterLink from "../../components/RegisterLink"; 

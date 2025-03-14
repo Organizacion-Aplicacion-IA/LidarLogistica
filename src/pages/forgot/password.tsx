@@ -2,8 +2,8 @@ import { IonContent, IonPage } from "@ionic/react";
 import { useHistory } from "react-router-dom";
 import LogoTitle from "../../components/LogoTitle";
 import RegisterLink from "../../components/RegisterLink";
-import Button from "../../components/Button";
-import BackButton from "../../components/BackButton";
+import Button from "../../components/Button/Button";
+import BackButton from "../../components/Button/BackButton";
 import PasswordInputField from "../../components/PasswordInputField"; 
 import "../styles.css";
 
