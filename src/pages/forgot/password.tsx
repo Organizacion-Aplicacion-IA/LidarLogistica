@@ -4,7 +4,7 @@ import LogoTitle from "../../components/LogoTitle";
 import RegisterLink from "../../components/RegisterLink";
 import Button from "../../components/Buttons/Button";
 import BackButton from "../../components/Buttons/BackButton";
-import PasswordInputField from "../../components/PasswordInputField"; 
+import PasswordInputField from "../../components/Inputs/PasswordInputField"; 
 import "../styles.css";
 
 const NewPassword: React.FC = () => {

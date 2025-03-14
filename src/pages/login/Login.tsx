@@ -1,8 +1,8 @@
 import { IonContent, IonPage } from "@ionic/react";
 import {useHistory} from "react-router-dom";
 import LogoTitle from "../../components/LogoTitle";
-import EmailInputField from "../../components/EmailInputField"; 
-import PasswordInputField from "../../components/PasswordInputField"; 
+import EmailInputField from "../../components/Inputs/EmailInputField"; 
+import PasswordInputField from "../../components/Inputs/PasswordInputField"; 
 import Button from "../../components/Buttons/Button"; 
 import GoogleButton from "../../components/Buttons/GoogleButton"; 
 import ForgotPasswordLink from "../../components/ForgotPasswordLink"; 

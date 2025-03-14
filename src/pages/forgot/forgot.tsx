@@ -4,7 +4,7 @@ import LogoTitle from "../../components/LogoTitle";
 import RegisterLink from "../../components/RegisterLink";
 import Button from "../../components/Buttons/Button";
 import BackButton from "../../components/Buttons/BackButton"; 
-import EmailInputField from "../../components/EmailInputField"; 
+import EmailInputField from "../../components/Inputs/EmailInputField"; 
 import "../styles.css";
 
 const Forgot: React.FC = () => {

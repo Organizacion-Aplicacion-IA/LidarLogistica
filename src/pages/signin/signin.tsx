@@ -1,7 +1,7 @@
 import { IonContent, IonPage } from "@ionic/react";
 import LogoTitle from "../../components/LogoTitle";
-import EmailInputField from "../../components/EmailInputField"; 
-import PasswordInputField from "../../components/PasswordInputField"; 
+import EmailInputField from "../../components/Inputs/EmailInputField"; 
+import PasswordInputField from "../../components/Inputs/PasswordInputField"; 
 import BackButton from "../../components/Buttons/BackButton";
 import Button from "../../components/Buttons/Button"; 
 import RegisterLink from "../../components/RegisterLink"; // Importa el componente
