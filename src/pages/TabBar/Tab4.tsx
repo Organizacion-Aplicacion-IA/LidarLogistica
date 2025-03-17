@@ -1,13 +1,13 @@
 import React from "react";
 import { IonContent, IonPage } from "@ionic/react";
+import Profile from "../../components/Profile";
 
 const Tab4: React.FC = () => {
     return(
         <IonPage>
-            <IonContent>
-                <h1>Perfil</h1>
-                <p>Contenido pestaña 4</p>
-            </IonContent>
+            
+            <Profile /> {/*Esta interfaz aun no tiene estilos*/}
+        
         </IonPage>
     );  
 };
