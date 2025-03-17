@@ -1,6 +1,6 @@
 import React from "react";
 import { IonText } from "@ionic/react";
-import Notification from "../assets/images/icons/notification.svg";
+import Notification from "../../assets/images/icons/notification.svg";
 
 const NotificationIcon = () => {
     return(

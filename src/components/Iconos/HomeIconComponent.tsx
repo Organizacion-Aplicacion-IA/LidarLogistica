@@ -1,6 +1,6 @@
 import { IonText } from "@ionic/react";
 import React from "react";
-import HomeIcon from "../assets/images/icons/home.svg";
+import HomeIcon from "../../assets/images/icons/home.svg"; //cambiare la ruta para que este mas organizado
 
 const HomeIconComponent = () => {
     return(

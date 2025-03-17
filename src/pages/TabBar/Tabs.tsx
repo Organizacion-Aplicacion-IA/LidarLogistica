@@ -7,10 +7,10 @@ import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
 import Tab4 from "./Tab4";
 import "../styles.css";
-import HomeIcon from "../../components/HomeIconComponent";
-import InventoryIcon from "../../components/InventoryIcon";
-import NotificationIcon from "../../components/NotificationIcon";
-import PerfilIcon from "../../components/PerfilIcon";
+import HomeIcon from "../../components/Iconos/HomeIconComponent"; //rutas corregidas a las nuevas ubicaciones
+import InventoryIcon from "../../components/Iconos/InventoryIcon";
+import NotificationIcon from "../../components/Iconos/NotificationIcon";
+import PerfilIcon from "../../components/Iconos/PerfilIcon";
 
 
 const Tabs: React.FC = () => {

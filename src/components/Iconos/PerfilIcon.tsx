@@ -1,6 +1,6 @@
 import React from "react";
 import { IonText } from "@ionic/react";
-import Profile from "../assets/images/icons/user.svg";
+import Profile from "../../assets/images/icons/user.svg"; //corregido
 
 const PerfilIcon = () => {
     return(

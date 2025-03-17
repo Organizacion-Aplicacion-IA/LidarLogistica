@@ -1,6 +1,6 @@
 import React from "react";
 import { IonText } from "@ionic/react";
-import Archive from "../assets/images/icons/archieve.svg";
+import Archive from "../../assets/images/icons/archieve.svg"; //corregido
 
 const InventoryIcon = () => {
     return(
