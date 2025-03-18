@@ -1,5 +1,5 @@
 import { IonButton } from "@ionic/react";
-import googleLogo from "../../assets/images/icons/google-icon.svg"; // Importa la imagen PNG
+import googleLogo from "../../assets/icons/google-icon.svg"; // Importa la imagen PNG
 
 const GoogleButton: React.FC = () => {
   return (

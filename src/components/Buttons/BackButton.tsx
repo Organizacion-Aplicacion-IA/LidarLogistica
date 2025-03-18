@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import backArrow from "../../assets/images/icons/back.svg"; // Asegúrate de que la ruta sea correcta //se corrigio la ruta ademas de que fue documencata pero asegurate de usar el ../ para retroceder
+import backArrow from "../../assets/icons/back.svg"; // Asegúrate de que la ruta sea correcta //se corrigio la ruta ademas de que fue documencata pero asegurate de usar el ../ para retroceder
 
 const BackButton: React.FC = () => {
   const history = useHistory();

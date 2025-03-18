@@ -10,7 +10,7 @@ const LogoTitle: React.FC<LogoTitleProps> = ({ title = "Bienvenido a Laserlogist
     <div className="logo-title-container">
       {/* Logo */}
       <div className="logo-container">
-        <img src="/src/assets/images/icons/logo.svg" alt="Logo" className="logo" />
+        <img src="/src/assets/images/logo.svg" alt="Logo" className="logo" />
       </div>
       
       {/* Texto de bienvenida dinámico */}

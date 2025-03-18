@@ -1,7 +1,7 @@
 import { IonInput, IonItem, IonText } from "@ionic/react";
 import { useState } from "react";
-import eyeImage from "../../assets/images/icons/eye.svg"; // Imagen para el icono 'eye' //corregido
-import eyeOffImage from "../../assets/images/icons/eye-off.svg"; // Imagen para el icono 'eyeOff' //corregido
+import eyeImage from "../../assets/icons/eye.svg"; // Imagen para el icono 'eye' //corregido
+import eyeOffImage from "../../assets/icons/eye-off.svg"; // Imagen para el icono 'eyeOff' //corregido
 
 interface PasswordInputFieldProps {
   label: string;
