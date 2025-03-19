@@ -1,6 +1,8 @@
 import { useHistory } from "react-router-dom";
-import backArrow from "../../assets/icons/back.svg"; // Asegúrate de que la ruta sea correcta //se corrigio la ruta ademas de que fue documencata pero asegurate de usar el ../ para retroceder
 
+// Variable 
+
+const backArrow = "https://res.cloudinary.com/diedcfrcv/image/upload/v1742329339/arrowLeft_ilft4o.svg"
 const BackButton: React.FC = () => {
   const history = useHistory();
 
@@ -13,7 +15,7 @@ const BackButton: React.FC = () => {
       <img
         src={backArrow} // Usar el archivo SVG
         alt="Back"
-        style={{ width: '30px', cursor: 'pointer' }} // Ajusta el tamaño y cursor
+        style={{ width: '35px', height:"45px", cursor: 'pointer'  }} // Ajusta el tamaño y cursor
         onClick={handleBack} // Acción de redirección al hacer clic
       />
     </div>
