@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 
 interface ForgotPasswordLinkProps {
-  text: string;
+  text?: React.ReactNode; // Ahora acepta JSX además de strings
   redirectTo: string;
 }
 

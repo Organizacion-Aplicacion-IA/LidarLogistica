@@ -19,19 +19,35 @@ const Login: React.FC = () => {
     <IonPage>
       <IonContent className="ion-padding login-container">
         <div className="login-wrapper">
+        <div style={{ marginBottom: "40px" }}>
           <LogoTitle />
+          </div>
 
           <div className="form-container">
-            <EmailInputField label="Correo electrónico" placeholder="Tu correo" />
-            <PasswordInputField label="Contraseña" placeholder="Tu contraseña" />
+          <div style={{ marginBottom: "24px" }}>
+            <EmailInputField label="Correo electrónico" placeholder="" />
+            </div>
+            <div style={{ marginBottom: "8px" }}>
+            <PasswordInputField label="Contraseña" placeholder="" />
+            </div>
             
-            <ForgotPasswordLink text="Has olvidado tu contraseña" redirectTo="/forgot-password" />
-            
+            <div style={{ marginBottom: "40px" }}>
+              <ForgotPasswordLink 
+                text={<span style={{ textDecoration: "underline" }}>Has olvidado tu contraseña</span>} 
+                redirectTo="/forgot-password" 
+              />
+            </div>
+
+            <div style={{ marginBottom: "25px", padding: "0px 0px"}}>
             <Button onClick={handleLogin}>Iniciar sesión</Button>
-
+            </div>
+            <div style={{ marginBottom: "120px" }}>
             <GoogleButton />
-
+            </div>
+            <div className="register-link-container">
             <RegisterLink />
+            </div>
+
           </div>
         </div>
       </IonContent>
