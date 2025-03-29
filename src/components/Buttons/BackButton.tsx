@@ -15,7 +15,7 @@ const BackButton: React.FC = () => {
       <img
         src={backArrow} // Usar el archivo SVG
         alt="Back"
-        style={{ width: '35px', height:"45px", cursor: 'pointer'  }} // Ajusta el tamaño y cursor
+        style={{ width: '30px', cursor: 'pointer' }} // Ajusta el tamaño y cursor
         onClick={handleBack} // Acción de redirección al hacer clic
       />
     </div>

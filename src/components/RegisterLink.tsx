@@ -1,25 +1,25 @@
 import { useHistory } from "react-router-dom";
 
 interface RegisterLinkProps {
-  text?: string;        // Texto antes del enlace
-  route?: string;       // Ruta a la que redirigir
-  linkText?: string;    // Texto del enlace
+  text?: string;        
+  route?: string;      
+  linkText?: string;  
 }
 
 const RegisterLink: React.FC<RegisterLinkProps> = ({
-  text = "¿No tienes una cuenta?", // Texto predeterminado
-  route = "/sign-in",            // Ruta predeterminada
-  linkText = "Registrate",        // Texto predeterminado para el enlace
+  text = "¿No tienes una cuenta?", 
+  route = "/sign-in",            
+  linkText = "Registrate",       
 }) => {
   const history = useHistory();
 
   const handleRedirect = () => {
-    history.push(route); // Redirige a la ruta proporcionada
+    history.push(route); 
   };
 
   return (
     <p className="register-text" onClick={handleRedirect}>
-      {text} <span className="register-link">{linkText}</span> {/* Aquí se muestra el texto del enlace */}
+      {text} <span className="register-link">{linkText}</span> 
     </p>
   );
 };

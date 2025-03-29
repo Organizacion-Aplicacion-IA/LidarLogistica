@@ -12,22 +12,30 @@ const NewPassword: React.FC = () => {
 
   const handleNext = () => {
     console.log("Procesar recuperación de contraseña...");
-    history.push("/login"); 
+    history.push("/tabs"); 
   };
 
   return (
     <IonPage>
       <IonContent className="ion-padding forgot-container">
         <div className="forgot-wrapper">
-          <LogoTitle 
-            title="Escribe nueva contraseña " 
-            subtitle="Escribir tu nueva contraseña. " 
-          />
+          <LogoTitle title="Escribe nueva contraseña " subtitle="Escribir tu nueva contraseña."/>
+          <div style={{ marginBottom: "40px", marginTop: "40px"}}>
           <BackButton />
+          </div>
           <div className="form-container">
-          <PasswordInputField label="Nueva contraseña" placeholder="Escribe nueva contraseña" />
+          <div style={{ marginBottom: "24px"}}>
+          <PasswordInputField label="Contraseña*" placeholder="" />
+          </div>
+          <div style={{ marginBottom: "40px"}}>
+          <PasswordInputField label="Verifica contraseña*" placeholder="" />
+          </div>
+          <div style={{ marginBottom: "156px" }}>
             <Button onClick={handleNext}>Siguiente</Button>
+            </div>
+            <div className="register-link-container">
             <RegisterLink />
+            </div>
           </div>
         </div>
       </IonContent>
