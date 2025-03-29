@@ -12,27 +12,32 @@ import {
     IonButton,
     IonAvatar,
     IonImg} from "@ionic/react";
+    import { useHistory as userHistory } from "react-router-dom";
     import '../../src/pages/styles.css'; //para agregar estilos aunque todavia no se los ponemos 
 
 
 const Profile: React.FC = () => {
+    const history = userHistory();
+
+    const handleLogout = () => {
+        console.log("Cerrar Sesion");
+        history.push("/login");
+    };
     return(
         <IonPage>
             <IonContent>
-                <div className="">
-                    <IonAvatar>
+                <div className="contentPerfil">
+                    <IonAvatar className="imagenPerfil">
                         <IonImg
-                        src=""
+                        src="https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png"
                         alt="Foto de perfil"
                          />
                     </IonAvatar>
-                </div>
-            </IonContent>
-            <IonContent>
+                </div> {/*He removido el contenedor y he puesto todo en el mismo contenedor, desde la imagen de perfil hasta el boton de cerrar sesion */}
                 {/*Informacion del usuario*/}
                 <IonList>
                     <IonItem>
-                        <IonLabel>
+                        <IonLabel className="datosUsuario">
                             <h2>Jose Manuel Tadeo</h2>
                             <p>Jose.Tadeo.isw@unipolidgo.edu.mx</p>
                         </IonLabel>
@@ -41,7 +46,7 @@ const Profile: React.FC = () => {
 
                 {/* Referencias */}
                 <IonList>
-                    <IonItem>
+                    <IonItem className="opcionesPerfil">
                         <IonLabel>Lenguaje: Español</IonLabel>
                     </IonItem>
                     <IonItem>
@@ -51,11 +56,9 @@ const Profile: React.FC = () => {
                 </IonList>
                 {/* Acciones */}
                 <IonList>
-                    <IonItem>
-                        <IonButton expand ="full" color = "dark" onClick={() => console.log("Cerrar Sesion")}>
+                        <IonButton className="cerrarButtom" color={"light"} expand ="full" onClick={(handleLogout)}>
                             Cerrar Sesion
                         </IonButton>
-                    </IonItem>
                 </IonList>
             </IonContent>
         </IonPage>

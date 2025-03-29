@@ -2,6 +2,7 @@ import React from "react";
 import { IonContent, IonPage } from "@ionic/react";
 import Profile from "../../components/Profile";
 
+
 const Tab4: React.FC = () => {
     return(
         <IonPage>

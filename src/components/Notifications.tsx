@@ -9,6 +9,7 @@ import {
     IonItem,
     IonLabel
 } from "@ionic/react";
+import NotificationComponent from "./NotificationComponent";
 
 const Notifications: React.FC = () => {
     return (
@@ -25,26 +26,24 @@ const Notifications: React.FC = () => {
             {/*Contenido principal*/}
             <IonContent>
                 <div style={{padding: '5px', textAlign: "center"}}> {/* Recordemos agregarle el nombre de una clase para los estilos */}
-                    <p>Visualiza y gestiona notificaciones en tiempo real</p>
+                    <p>Visualiza y gestiona notificaciones en tiempo real.
+                        Mantente informado sin salir
+                    </p>
                 </div>
                 {/*Lista de notificaciones*/}
                 <IonList>
 
                     {/* Notificacion 1 */}
-                    <IonItem>
-                        <IonLabel>
-                            <h2>Stock Critico: 1 Producto</h2>
-                            <p>Atencion, equipo de logistica. El inventario de. . .</p>
-                        </IonLabel>
-                    </IonItem>
+                    <NotificationComponent //no se como esta estructurada la base de datos pero aqui adapta los parametros segun tus necesidades
+                    title="Stock Critico: 1 Producto"
+                    descripcion="¡Atencion, equipo de logistica! El inventario de. . ." 
+                    />
 
                     {/* Notificacion 2 */}
-                    <IonItem>
-                        <IonLabel>
-                            <h2>Stock Critico: 2 Producto</h2>
-                            <p>Atencion, equipo de logistica. El inventario de . . .</p>
-                        </IonLabel>
-                    </IonItem>
+                    <NotificationComponent 
+                    title="Stock Critico: 2 Producto"
+                    descripcion="!Atencion, equipo de logistica¡ El inventario de. . ." 
+                    />
 
                 </IonList>
             </IonContent>
