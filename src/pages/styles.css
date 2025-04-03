@@ -303,16 +303,38 @@
 
 /*Componente de la notificacion*/
 .notification-item {
+  --border-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px -15px;
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   border-radius: 5px;
   width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.notification-rectangulo{
+  width: 10px;
+  height: 100%;
+  background-color: #ff5900; /* Cambia el color según tu preferencia */
+  position: relative;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+}
+.notificacionContenedor{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .notification-text {
