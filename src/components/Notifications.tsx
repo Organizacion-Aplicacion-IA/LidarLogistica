@@ -14,15 +14,15 @@ import NotificationComponent from "./NotificationComponent";
 const Notifications: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader>
+                {/*Header*/}
                 <IonToolbar>
                     <IonTitle>
-                        <div style={{textAlign: "center", color:"black"}}> {/* Recordemos agregarle el nombre de una clase para los estilos */}
+                        <div style={{textAlign: "center", color:"black", }}> {/* Recordemos agregarle el nombre de una clase para los estilos */}
                             Notificaciones
                         </div>
                     </IonTitle>
                 </IonToolbar>
-            </IonHeader>
+            
             {/*Contenido principal*/}
             <IonContent>
                 <div style={{padding: '5px', textAlign: "center"}}> {/* Recordemos agregarle el nombre de una clase para los estilos */}
